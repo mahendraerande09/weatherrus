@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather RU's</title>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather RU's</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-block">
+            <img src="./images/icons/brand-logo.svg" alt="Logo" class="logo" />
+            <h2 class="text-dark-gray">Weather R’US</h2>
+        </div>
+
+        <div class="content-block">
+            <div class="form-group">
+                <img src="./images/icons/search-icon.svg" alt="">
+                <input type="search" class="form-control" name="search" id="search" placeholder="Search...">
+            </div>
+
+            <div class="user-and-notification-block">
+                <div class="icon-toggle">
+                    <input type="checkbox" id="themeToggle" />
+                    <label for="themeToggle" class="toggle-label">
+                        <img src="./images/icons/sun-icon.svg" alt="Light mode" class="icon sun" />
+                        <img src="./images/icons/moon-icon.svg" alt="Dark mode" class="icon moon" />
+                        <span class="ball"></span>
+                    </label>
+                </div>
+
+                <div class="notification d-flex">
+                    <img src="./images/icons/bell-icon.svg" alt="">
+                </div>
+
+                <div class="user-block">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <img src="./images/icons/user-icon.png" alt="" class="user">
+                            <div class="designation">
+                                <p class="name">Mahendra E.</p>
+                                <p class="role">Project Manager</p>
+                            </div>
+
+                            <img src="./images/icons/chevron-down-icon.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#">Messages</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <img src="./images/icons/dashboard-icon.svg" alt="">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/forecast-icon.svg" alt="">
+                            Forecast
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/historic-data-icon.svg" alt="">
+                            Historical Data
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/tracker-icon.svg" alt="">
+                            Anomaly Tracker
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/settings-icon.svg" alt="">
+                            Settings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/logout-icon.svg" alt="">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="custom-alert" id="customAlert">
+                <div class="alert-message-block">
+                    <span class="climate-status-indicator"></span>
+                    <span class="alert-message">Moderate Alert : Thunderstorm Advisory in Johannesburg</span>
+                </div>
+                <a href="#">View Details</a>
+                <span class="alert-close" id="closeAlertBtn">&times;</span>
+            </div>
+
+            <div class="tier tier-one">
+                <div class="card location-forecast-report">
+                    <div class="row top-row">
+                        <div class="location">
+                            <img src="./images/icons/locator-icon.svg" alt="">
+                            <p>Johannesburg</p>
+                        </div>
+
+                        <div class="unit-toggle">
+                            <input type="checkbox" id="unitToggle" />
+                            <label for="unitToggle" class="toggle-label">
+                                <span class="unit unit-c">C</span>
+                                <span class="unit unit-f">F</span>
+                                <span class="ball"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row middle-row">
+                        <div class="date-timestamp">
+                            <h3 class="day">Monday</h3>
+                            <p class="date">24 Dec, 2023</p>
+                            <p class="time">08:45 AM</p>
+                        </div>
+
+                        <img src="./images/icons/weather-icon.svg" alt="">
+                    </div>
+
+                    <div class="row bottom-row">
+                        <div class="weather-container" data-temp-c="26">
+                            <span class="temperature">
+                                <span class="temp-value">26</span><span class="unit">°C</span>
+                            </span>
+                            <p>High: 26 Low: 9</p>
+                        </div>
+
+                        <div class="climate-type">
+                            <h4>Sunny</h4>
+                            <p>Feels Like 22</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="generic-forecast-report">
+                    <div class="update-block">
+                        <div class="card">
+                            <div class="forecast-type">
+                                <img src="./images/icons/humidity-icon.svg" alt="">
+                                <h6>HUMIDITY</h6>
+                            </div>
+                            <div class="forecast-value">
+                                <h2>85%</h2>
+                            </div>
+                            <h6>Humidity is good</h6>
+                        </div>
+
+                        <div class="card">
+                            <div class="forecast-type">
+                                <img src="./images/icons/rainfall-icon.svg" alt="">
+                                <h6>RAINFALL</h6>
+                            </div>
+                            <div class="forecast-value">
+                                <h2>1.88mm</h2>
+                                <p>in last hour</p>
+                            </div>
+                            <h6>1.22mm expected in next hours</h6>
+                        </div>
+
+                        <div class="card get-stats">
+                            <img src="./images/icons/statistics-icon.svg" alt="">
+                            <h5>Check Full Stats</h5>
+                            <a href="#" target="_blank" class="external-link">
+                                <img src="./images/icons/external-link-icon.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <div class="forecast-type">
+                                <img src="./images/icons/humidity-icon.svg" alt="">
+                                <h6>UV Index</h6>
+                            </div>
+                            <div class="forecast-value">
+                                <h2>4</h2>
+                                <p>Moderate</p>
+                            </div>
+                            <input type="range" min="0" max="100" value="30" class="custom-range">
+                        </div>
+
+                        <div class="card">
+                            <div class="forecast-type">
+                                <img src="./images/icons/humidity-icon.svg" alt="">
+                                <h6>VISIBILITY</h6>
+                            </div>
+                            <div class="forecast-value">
+                                <h2>8 KM</h2>
+                            </div>
+                            <h6>Similar to the actual temperature.</h6>
+                        </div>
+
+                        <div class="card get-stats">
+                            <img src="./images/icons/weekly-forecast-icon.svg" alt="">
+                            <h5>Check Full Stats</h5>
+                            <a href="#" target="_blank" class="external-link">
+                                <img src="./images/icons/external-link-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tier tier-two">
+                <div class="card anomaly-report">
+                    <div class="segregator">
+                        <div>
+                            <h5>Total Anomalies Recorded</h5>
+                            <h3 class="text-dark-gray">14</h3>
+                        </div>
+
+                        <div>
+                            <div class="custom-select day-wrapper">
+                                <select id="month" name="month">
+                                    <option value="monthly">Monthly</option>
+                                    <option value="uarterly">Quarterly</option>
+                                    <option value="yearly">Yearly</option>
+                                </select>
+                            </div>
+
+                            <img src="./images/icons/temperature-icon.svg" alt="">
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-primary">
+                        Report New Anomaly
+                        <img src="./images/icons/add-icon.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="card anomaly-data">
+                    <div class="headline-details">
+                        <h2>Recent Anomalies</h2>
+                        <a href="#">View Details</a>
+                    </div>
+
+                    <div class="tile-wrapper">
+                        <div class="tile">
+                            <div class="climate-details">
+                                <div class="climate-details-indicator critical"></div>
+                                <div class="climate-status">
+                                    <h5 class="text-dark-gray">Critical</h5>
+                                </div>
+                            </div>
+
+                            <p class="text-danger">Severe Thunderstorm Warning in Johannesburg</p>
+                            <p>Heavy rainfall, strong winds, and lightning expected.</p>
+
+                            <div class="timestamp-block">
+                                <span><strong>Date</strong> : 24.07.2024 | <strong>Date</strong> : 3:15 PM</span>
+                                <span><strong>Reported by</strong> : Field Agent 0021</span>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div class="climate-details">
+                                <div class="climate-details-indicator moderate"></div>
+                                <div class="climate-status">
+                                    <h5 class="text-dark-gray">Moderate</h5>
+                                </div>
+                            </div>
+
+                            <p class="text-warning">Severe Thunderstorm Warning in Johannesburg</p>
+                            <p>Heavy rainfall, strong winds, and lightning expected.</p>
+
+                            <div class="timestamp-block">
+                                <span><strong>Date</strong> : 24.07.2024 | <strong>Date</strong> : 3:15 PM</span>
+                                <span><strong>Reported by</strong> : Field Agent 0021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tier tier-three">
+                <div class="thunderstorm-dispplay">
+                    <img src="./images/chart.png" alt="">
+                </div>
+
+                <div class="anomaly-tracker-dispplay">
+                    <img src="./images/map.png" alt="">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+</html>

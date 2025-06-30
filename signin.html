@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather RU's</title>
+</head>
+
+<body>
+    <main class="main-wrapper">
+        <!-- Left Section -->
+        <section class="left-section">
+            <div class="left-top">
+                <div class="logo-block">
+                    <img src="./images/icons/brand-logo.svg" alt="Logo" class="logo" />
+                    <h2 class="text-primary">Weather R’US</h2>
+                </div>
+            </div>
+            <div class="left-content">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="./images/carousel_img.png" alt="Slide 1" />
+                            <div class="carousel-slide-content">
+                                <h2 class="text-primary">A smarter way to monitor the unpredictable.</h2>
+                                <p>Track, detect, and stay ahead of weather conditions.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="./images/carousel_img.png" alt="Slide 2" />
+                            <div class="carousel-slide-content">
+                                <h2 class="text-primary">Smarter tools for tracking the unexpected.</h2>
+                                <p>Stay informed and prepared with real-time weather insights.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="./images/carousel_img.png" alt="Slide 3" />
+                            <div class="carousel-slide-content">
+                                <h2 class="text-primary">Intelligence built for unpredictable weather.</h2>
+                                <p>Monitor, respond, and adapt to changing conditions with ease.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Section -->
+        <section class="right-section">
+            <div class="right-top">
+                <div class="icon-toggle">
+                    <input type="checkbox" id="themeToggle" />
+                    <label for="themeToggle" class="toggle-label">
+                        <img src="./images/icons/sun-icon.svg" alt="Light mode" class="icon sun" />
+                        <img src="./images/icons/moon-icon.svg" alt="Dark mode" class="icon moon" />
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="signin-signup-wrapper">
+                    <h2>Sign In To Your Account</h2>
+                    <p class="text-semi-dark-gray">Welcome back! Please enter your details.</p>
+
+                    <form class="signin-signup-block">
+                        <div class="form-group">
+                            <img src="./images/icons/mail-icon.svg" alt="">
+                            <input class="form-control" type="text" name="email" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <img src="./images/icons/lock-icon.svg" alt="">
+                            <input class="form-control" type="password" name="email" id="password"
+                                placeholder="Password">
+                            <div class="password-toggler">
+                                <img src="./images/icons/passwod-hide-icon.svg" class="hide-password" alt="">
+                                <img src="./images/icons/passwod-show-icon.svg" class="show-password" alt="">
+                            </div>
+                        </div>
+
+                        <div class="password-warning-block d-none">
+                            <p class="text-light-gray">Your password must have at least 8 characters</p>
+                            <span class="text-danger d-flex">
+                                <img src="./images/icons/info-icon.svg" alt="">
+                                Your password is not strong enough. Use at least 8 characters
+                            </span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" id="agree" />
+                            <label for="agree" class="text-dark-gray">
+                                Remember me
+                            </label>
+
+                            <a href="#" class="forgot-password">Forgot Password</a>
+                        </div>
+
+                        <button type="button" class="btn-primary" id="signin">Sign In</button>
+
+                        <div class="text-over-border">
+                            <p class="text-center text-gray-500">Or sign in with</p>
+                        </div>
+
+                        <button type="button" class="btn-outline" id="google-login-btn">
+                            <img src="./images/icons/google-icon.svg" alt="">
+                            Google
+                        </button>
+
+                        <p class="account-notifier-block">Don't have an account?
+                            <a href="#" target="_blank">Sign Up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
